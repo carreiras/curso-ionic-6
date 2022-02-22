@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'card',
     loadChildren: () => import('./pages/componentes/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'alert',
+    loadChildren: () => import('./pages/componentes/alert/alert.module').then( m => m.AlertPageModule)
+  },
+  {
+    path: 'accordion',
+    loadChildren: () => import('./pages/componentes/accordion/accordion.module').then( m => m.AccordionPageModule)
+  },
 ];
 
 // @ts-ignore
