@@ -1,0 +1,169 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Components - Tags</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1>Badges</h1>
+  <h3>Default</h3>
+  <ion-badge>99</ion-badge>
+
+  <h3>Colors</h3>
+  <ion-badge color="primary">11</ion-badge>
+  <ion-badge color="secondary">22</ion-badge>
+  <ion-badge color="tertiary">33</ion-badge>
+  <ion-badge color="success">44</ion-badge>
+  <ion-badge color="warning">55</ion-badge>
+  <ion-badge color="danger">66</ion-badge>
+  <ion-badge color="light">77</ion-badge>
+  <ion-badge color="medium">88</ion-badge>
+  <ion-badge color="dark">99</ion-badge>
+
+  <h3>Item with badge on left and right</h3>
+  <ion-item>
+    <ion-badge slot="start">11</ion-badge>
+    <ion-label>My Item</ion-label>
+    <ion-badge slot="end">22</ion-badge>
+  </ion-item>
+
+  <h1>Checkbox</h1>
+  <h3>Default Checkbox</h3>
+  <ion-checkbox></ion-checkbox>
+
+  <h3>Disabled Checkbox</h3>
+  <ion-checkbox disabled="true"></ion-checkbox>
+
+  <h3>Checked Checkbox</h3>
+  <ion-checkbox checked="true"></ion-checkbox>
+
+  <h1>Chip</h1>
+  <ion-chip>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-label color="secondary">Secondary Label</ion-label>
+  </ion-chip>
+
+  <ion-chip color="secondary">
+    <ion-label color="dark">Secondary w/ Dark label</ion-label>
+  </ion-chip>
+
+  <ion-chip [disabled]="true">
+    <ion-label>Disabled Chip</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="pin"></ion-icon>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="heart" color="dark"></ion-icon>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-label>Button Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="pin" color="primary"></ion-icon>
+    <ion-label>Icon Chip</ion-label>
+    <ion-icon name="close"></ion-icon>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>Avatar Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <h1>Lists</h1>
+  <h3>List of Text Items</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>List of Input Items</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <h3>List of Sliding Items</h3>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h1>Progress Bar</h1>
+  <h3>Default Progressbar</h3>
+  <ion-progress-bar></ion-progress-bar>
+  <h3>Default Progressbar with 50 percent</h3>
+  <ion-progress-bar value="0.5"></ion-progress-bar>
+  <h3>Colorize Progressbar</h3>
+  <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+  <br/><br/>
+  <ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+
+  <h3>Other types</h3>
+  <br/><br/>
+  <ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+  <br/><br/>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  <br/><br/>
+  <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+
+</ion-content>
