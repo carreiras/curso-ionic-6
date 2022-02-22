@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public menuCollection = [
     { title: 'Home', url: 'home', icon: 'home' },
-    { title: 'Alert', url: 'alert', icon: 'alert' },
-    { title: 'Accordion', url: 'accordion', icon: 'file-tray-stacked' },
-    { title: 'Ion-Button', url: 'button', icon: 'radio-button-on' },
-    { title: 'Card', url: 'card', icon: 'card' },
+    { title: 'Accordion', url: 'accordion', icon: 'cube' },
+    { title: 'Action Sheet', url: 'actionsheet', icon: 'cube' },
+    { title: 'Alert', url: 'alert', icon: 'cube' },
+    { title: 'Button', url: 'button', icon: 'cube' },
+    { title: 'Card', url: 'card', icon: 'cube' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

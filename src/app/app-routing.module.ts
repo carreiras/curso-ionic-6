@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'accordion',
     loadChildren: () => import('./pages/componentes/accordion/accordion.module').then( m => m.AccordionPageModule)
   },
+  {
+    path: 'actionsheet',
+    loadChildren: () => import('./pages/componentes/actionsheet/actionsheet.module').then( m => m.ActionsheetPageModule)
+  },
 ];
 
 // @ts-ignore
