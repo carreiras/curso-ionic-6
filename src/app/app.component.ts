@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public menuCollection = [
+  public menuHomeCollection = [
     { title: 'Home', url: 'home', icon: 'home' },
+  ];
+  public menuComponentCollection = [
     { title: 'Accordion', url: 'accordion', icon: 'cube' },
     { title: 'Action Sheet', url: 'actionsheet', icon: 'cube' },
     { title: 'Alert', url: 'alert', icon: 'cube' },
@@ -16,6 +18,9 @@ export class AppComponent {
     { title: 'Components - Js', url: 'js', icon: 'cube' },
     { title: 'Components - Tags', url: 'tags', icon: 'cube' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public menuNativeCollection = [
+    { title: 'Camera', url: 'camera', icon: 'cube' },
+  ];
+
   constructor() {}
 }
