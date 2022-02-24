@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'js',
     loadChildren: () => import('./pages/componentes/js/js.module').then( m => m.JsPageModule)
   },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/componentes/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
 ];
 
 // @ts-ignore

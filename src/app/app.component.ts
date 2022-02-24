@@ -12,6 +12,7 @@ export class AppComponent {
     { title: 'Alert', url: 'alert', icon: 'cube' },
     { title: 'Button', url: 'button', icon: 'cube' },
     { title: 'Card', url: 'card', icon: 'cube' },
+    { title: 'Datetime', url: 'datetime', icon: 'cube' },
     { title: 'Components - Js', url: 'js', icon: 'cube' },
     { title: 'Components - Tags', url: 'tags', icon: 'cube' },
   ];
