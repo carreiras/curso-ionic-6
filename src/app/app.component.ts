@@ -20,6 +20,7 @@ export class AppComponent {
   ];
   public menuNativeCollection = [
     { title: 'Camera', url: 'camera', icon: 'cube' },
+    { title: 'Flash', url: 'flash', icon: 'cube' },
   ];
 
   constructor() {}
